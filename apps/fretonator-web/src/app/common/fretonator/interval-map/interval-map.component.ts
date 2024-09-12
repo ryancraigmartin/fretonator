@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./interval-map.component.scss']
 })
 export class IntervalMapComponent {
-  @Input() intervalMap: [];
+  @Input() intervalMap: Array<number>;
 }
