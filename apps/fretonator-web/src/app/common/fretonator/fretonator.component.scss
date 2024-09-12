@@ -109,3 +109,26 @@
   margin-bottom: 1rem;
   align-self: flex-start;
 }
+
+.metronome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.metronome-btn {
+  display: flex;
+  flex-direction: column;
+  @include hard_button_base();
+  align-self: unset;
+}
+
+.iframe-wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+

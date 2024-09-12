@@ -31,6 +31,7 @@ export class FretonatorComponent {
   scaleDegreesToggleText = ScaleDegreesToggleText.hidden;
   showTheoreticalScalesInfo = false;
   theoreticalScalesToggleText = TheoreticalScalesToggleText.hidden;
+  isMetronomeVisible = false;
 
   constructor(private globalService: GlobalService) {
   }
@@ -48,5 +49,9 @@ export class FretonatorComponent {
   enharmonicLinkClick() {
     this.toggleTheoreticalScaleInfo();
     this.globalService.getScrollTarget().scrollIntoView();
+  }
+
+  toggleMetronomeIframe() {
+    this.isMetronomeVisible = !this.isMetronomeVisible;
   }
 }
